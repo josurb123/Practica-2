@@ -1,8 +1,12 @@
 ---
 title: "Pracitca 2"
-author: "Josue Reza Bada"
+author: "Equipo"
 date: "2026-03-14"
 output: html_document
 ---
+
+#
+
+
 
 #GRÁFICA DE RATIFICACIÓN
