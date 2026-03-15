@@ -3,7 +3,7 @@ library(iNEXT)
 
 ##cargar cada uno de los sitios en un objeto
 ####modificando algunos aspectos de los objetos para poder hacer los pasos posteriores sin problemas
-datos_<-read_csv("data/Sitio_1.csv")
+datos_1<-read_csv("data/Sitio_1.csv")
 datos_1 <- as.data.frame(datos_1)
 rownames(datos_1) <- datos_1[,1]
 datos_1 <- datos_1[,-1]
@@ -110,3 +110,27 @@ ggiNEXT(out, type = 1) +
   theme_classic(base_size = 12)
 
 #la imagen la guardamos en la carpeta correspondiente
+
+
+###GRAFICAS DE RANGO-ABUNDANCIA. 
+rank_data <- datos %>%
+  pivot_longer(-sitio, names_to = "especie", values_to = "n") %>%
+  group_by(sitio) %>%
+  filter(n > 0) %>%
+  
+  mutate(prop = n / sum(n),
+         rango = rank(-prop, ties.method = "first")) %>%
+  ungroup()
+
+ggplot(rank_data, aes(x = rango, y = log10(prop), color = sitio)) +
+  geom_line(linewidth = 0.9) + geom_point(size = 2) +
+  scale_color_brewer(palette = "Set1") +
+  labs(title = "Gráficas de rango-abundancia",
+       x = "Rango de especie",
+       y = "log10 (Abundancia relativa)") +
+  theme_classic(base_size = 12) +
+  facet_wrap(~sitio, scales = "free_x")
+
+
+###
+
