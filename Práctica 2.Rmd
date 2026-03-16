@@ -5,8 +5,78 @@ date: "2026-03-14"
 output: html_document
 ---
 
-#
+#Introduccion
+La diversidad biológica es un componente fundamental en la ecología de comunidades, pues describe de que manera se distribuyen las especies en un ecosistema.
+En este trabajo se analizaron comunidades simuladas, con el objetivo de caracterizar su diversidad mediante herraminetas cuantitativas.
 
 
+#Diversidad alfa
+```{r}
+
+```
 
 #GRÁFICA DE RATIFICACIÓN
+
+
+#Análisis y Reflexión
+
+A. Diversidad alfa — comparación entre índices
+
+a) P1. Compara los valores de Shannon y Simpson entre todos los sitios. ¿Por qué pueden dar órdenes de ranking distintos? ¿Qué información adicional aporta cada uno?
+R: El indice de shannon y simpson muestran patrones similares. Shannon es mas sensible a especies raras porque refleja tanto riqueza como equitatividad, mientras que simpson (1-D), da mas peso a especies mas dominantes (pueden producir órdenes de ranking distintos porque ponderan de forma diferente la abundancia de las especies). En los datos analizados el sitio 3 presenta los valores mas altos de ambos índices (shannon= 2.44 y Simpson=0.91). Para Shannon los valores mas alejados del 0 indican mayor diversidad, mientras que en simpson (1-D) 0 a 1 valores cercanos a 1 indican mayor diversidad.
+En el caso del sitio 7, ambos indices fueron de 0, debido a que la riqueza era de solo una especie. 
+
+b) P2. ¿Qué sitio presenta la mayor equitatividad según Pielou? ¿Podría tener mayor
+equitatividad pero menor riqueza que otro sitio? Explica con un ejemplo numérico concreto.
+R: El sitio 3, con un valor de .98, indica que las abundancias entre especies esta distribuidas de forma similar/uniforme. Sí es posible que un sitio tenga mayor equitatividad pero menor riqueza que otro. Por ejemplo el sitio 2 tiene riqueza de 8 y equitatividad de 0.897, minetras que el sitio 6 tiene 12 especies pero una equitatividad de 0.841, o sea menor.
+
+
+c) P3. Compara la riqueza observada (S) con el estimado de Chao1. ¿En qué sitio la brecha
+es mayor? ¿Qué implicación tiene esto para el diseño de un muestreo real?
+R: La mayoria de los indices de Chao1 son iguales o cercanos a la riqueza observada, sin embargo el sitio 2 es en el que mayor se nota una brecha de diferencia, ya que S= 8 y Chao1= 8.5, lo que suguiere que podrian existir especies no detectadas en el  muestreo.
+
+d) P4. Si duplicaras el número de individuos muestreados en el sitio con menor riqueza,
+¿esperarías que Chao1 cambiara significativamente? Justifica ecológica y estadísticamente.
+R: El sitio con menor riqueza es el 7, pues solo tiene una especie, si se duplica el numero de individuos no habria cambios en chao1, porque la riqueza sigue sinedo 1. Chao1 se basa principalmente en la presencia de singletons y doubletons para estimar riqueza no observada. 
+
+
+B. Curvas de rarefacción
+
+e) P5. ¿Cuál sitio alcanza la asíntota más rápidamente? ¿Qué te dice eso sobre la estructura de la comunidad?
+
+f) P6. Dos sitios pueden tener la misma riqueza observada pero curvas con pendientes muy
+distintas. ¿Cómo interpretas esa diferencia en términos de abundancias relativas?
+
+g) P7. ¿A qué tamaño de muestra estandarizado compararías los sitios? Justifica tu elección y
+calcula la riqueza rarefactada para todos los sitios a ese nivel.
+
+C. Gráficas de rango-abundancia
+h) P8. Identifica la forma general de cada curva (log-normal, geométrica, etc.). ¿Qué modelo
+ecológico subyace a cada forma? ¿Qué mecanismos comunitarios podrían explicarla?
+i) P9. ¿En qué sitio la especie más dominante representa la mayor fracción de individuos?
+¿Cómo se relaciona ese resultado con el índice de Simpson?
+j) P10. Imagina que en un monitoreo de largo plazo una curva log-normal se convierte en
+geométrica. ¿Qué perturbación ecológica podría explicarlo?
+
+D. Diversidad beta
+k) P11. Analiza la matriz de Bray-Curtis. ¿Qué par de sitios es más diferente? ¿Es el mismo
+par más diferente según Jaccard? Si no coinciden, ¿a qué se debe?
+l) P12. ¿Qué componentes del recambio beta (reemplazo vs. anidamiento) podrían explicar
+los patrones que observas? (Pista: investiga el paquete betapart en R.)
+m) P13. Si estos sitios representaran puntos a lo largo de un gradiente altitudinal, ¿qué patrón
+de beta-diversidad esperarías según la teoría del dominio medio (mid-domain effect)?
+¿Coincide con tus resultados?
+
+E. Síntesis e interpretación ecológica
+n) P14. Construye una narrativa ecológica coherente: tomando todos los índices calculados,
+describe qué tipo de comunidad representa cada sitio (p. ej. perturbada, madura,
+oligoespéciosa) y propón una hipótesis sobre el proceso ecológico que generó esas
+diferencias.
+o) P15. Si tuvieras que escoger un solo índice para monitorear la salud de estas comunidades
+a lo largo del tiempo, ¿cuál elegirías y por qué? ¿Cuáles serían sus limitaciones?
+p) P16. Propón un diseño de muestreo para un estudio real que permita calcular diversidad
+alfa y beta de manera robusta. Especifica: número de sitios, réplicas, tamaño mínimo de
+muestra y justificación estadística.
+
+
+
