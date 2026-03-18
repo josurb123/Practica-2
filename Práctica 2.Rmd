@@ -42,25 +42,34 @@ R: El sitio con menor riqueza es el 7, pues solo tiene una especie, si se duplic
 
 B. Curvas de rarefacción
 
-e) P5. ¿Cuál sitio alcanza la asíntota más rápidamente? ¿Qué te dice eso sobre la estructura de la comunidad?
+e) P5. ¿Cuál sitio alcanza la asíntota más rápidamente? ¿Qué te dice eso sobre la estructura de la comunidad? 
+R:La linea verde, que corresponde a la especie “Amarillo”, es la más rápido se aplana (alcanza la asíntota antes), lo que indica que la mayoria de sus especies fueron identificadas rápidamnete, poca riqueza/alta dominancia, es decir pocas especies concentran la mayor parte de los individuos). 
 
 f) P6. Dos sitios pueden tener la misma riqueza observada pero curvas con pendientes muy
-distintas. ¿Cómo interpretas esa diferencia en términos de abundancias relativas?
+distintas. ¿Cómo interpretas esa diferencia en términos de abundancias relativas? 
+R: Si la riqueza observada es la misma, pero las pendientes en sus curvas es muy distinta indica que las abundancias relativas son distintas. Si la pendiente es más pronunciada indica que las especies aparecen rápidamente conforme aumenta el muestreo, sugiriendo una comunidad más equitativa. Y si la curva es menos pronunciada sería un indicador de mayor dominancia por una especie, y conforme se encuentran especies la curva sube pero lentamente hasta llegar pronto a la asíntota. 
 
-g) P7. ¿A qué tamaño de muestra estandarizado compararías los sitios? Justifica tu elección y
-calcula la riqueza rarefactada para todos los sitios a ese nivel.
+g) P7. ¿A qué tamaño de muestra estandarizado compararías los sitios? Justifica tu elección y calcula la riqueza rarefactada para todos los sitios a ese nivel. 
+R: Usar el número mínimo de individuos común entre todos los sitios, es decir el sitio con menor número de individuos en el muestreo. 
+
 
 C. Gráficas de rango-abundancia
-h) P8. Identifica la forma general de cada curva (log-normal, geométrica, etc.). ¿Qué modelo
-ecológico subyace a cada forma? ¿Qué mecanismos comunitarios podrían explicarla?
+
+h) P8. Identifica la forma general de cada curva (log-normal, geométrica, etc.). ¿Qué modelo ecológico subyace a cada forma? ¿Qué mecanismos comunitarios podrían explicarla?
+R: Muy inclinada: modelo geométrico (primera especie muy dominante), más horizontal: log-normal (mas equitatividad).
+En el sitio 7 una solo especie domina, los sitios 4,6, presenta una caída fuerte en su curva (alta dominancia de pocas especies), el sitios 2 tiene “curvas más suaves, y lel 1 y 5 son menos caídas drásticas posible log-normal. 
+
 i) P9. ¿En qué sitio la especie más dominante representa la mayor fracción de individuos?
-¿Cómo se relaciona ese resultado con el índice de Simpson?
+¿Cómo se relaciona ese resultado con el índice de Simpson? 
+R:El primer punto (lado izquierdo) de cada curva es la especie más dominante, es el punto mas alto, es decir la mayor abundancia relativa. En el sitio 7 solo hay una especie, domina todo, en los sitios 4 y 6 se ven más altos al inicio.  En relación con el índice de simpson, una alta dominancia presenta bajos valores de diversidad, ya que pocas especies concentran la mayor parte de individuos. 
+
 j) P10. Imagina que en un monitoreo de largo plazo una curva log-normal se convierte en
 geométrica. ¿Qué perturbación ecológica podría explicarlo?
+Eso significa un aumento de la dominancia en pocas especies, factores como contaminación, especies invasoras, caza, o propios ciclos de presa-depredador, entre otros. 
+
 
 D. Diversidad beta
-k) P11. Analiza la matriz de Bray-Curtis. ¿Qué par de sitios es más diferente? ¿Es el mismo
-par más diferente según Jaccard? Si no coinciden, ¿a qué se debe?
+k) P11. Analiza la matriz de Bray-Curtis. ¿Qué par de sitios es más diferente? ¿Es el mismo par más diferente según Jaccard? Si no coinciden, ¿a qué se debe?
 l) P12. ¿Qué componentes del recambio beta (reemplazo vs. anidamiento) podrían explicar
 los patrones que observas? (Pista: investiga el paquete betapart en R.)
 m) P13. Si estos sitios representaran puntos a lo largo de un gradiente altitudinal, ¿qué patrón
