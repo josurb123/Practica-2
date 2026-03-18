@@ -132,5 +132,23 @@ ggplot(rank_data, aes(x = rango, y = log10(prop), color = sitio)) +
   facet_wrap(~sitio, scales = "free_x")
 
 
-###
+###DIVERSIDAD BETA
+library(reshape2)
+jac <- vegdist(sp_matrix, method = "jaccard", binary = TRUE)
+bc <- vegdist(sp_matrix, method = "bray")
+
+plot_beta <- function(dist_obj, titulo) {
+  melt(as.matrix(dist_obj)) %>%
+    ggplot(aes(Var1, Var2, fill = value)) +
+    geom_tile(color = "white") +
+    geom_text(aes(label = round(value, 2)), size = 3.5) +
+    scale_fill_gradient(low = "#E8F5E9", high = "#1B5E20",
+                        name = "Disimilitud") +
+    labs(title = titulo, x = NULL, y = NULL) +
+    
+    theme_minimal(base_size = 11) +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+}
+plot_beta(jac, "Disimilitud de Jaccard")
+plot_beta(bc, "Disimilitud de Bray-Curtis")
 
