@@ -11,12 +11,13 @@ En este trabajo se analizaron comunidades simuladas, con el objetivo de caracter
 
 
 #Diversidad alfa
-```{r}
+```{r {r setup, include=FALSE}
+source("script_auxiliar.R")
 
 ```
 
-#GRÁFICA DE RATIFICACIÓN
-
+#GRÁFICA DE RAREFICACIÓN
+![Rarefacción](figures/Curva de Rarefacción.png)
 
 #Análisis y Reflexión
 
@@ -70,11 +71,22 @@ Eso significa un aumento de la dominancia en pocas especies, factores como conta
 
 D. Diversidad beta
 k) P11. Analiza la matriz de Bray-Curtis. ¿Qué par de sitios es más diferente? ¿Es el mismo par más diferente según Jaccard? Si no coinciden, ¿a qué se debe?
+R: los los sitios que presentan mas diferencias aparecieron iguales en la matriz de jaccard y la matriz de Bray Curtis, siendo los más diferentes el sitio 7 con el sitio 4 y después el sitio 7 con el sitio 6
+
+![Disimilitud Bray-Curtis](figures/Disimilitud de Bray-Curtis.png)
+![Disimilitud Jaccard](figures/Disimilitud de Jaccard.png)
+
 l) P12. ¿Qué componentes del recambio beta (reemplazo vs. anidamiento) podrían explicar
 los patrones que observas? (Pista: investiga el paquete betapart en R.)
-m) P13. Si estos sitios representaran puntos a lo largo de un gradiente altitudinal, ¿qué patrón
-de beta-diversidad esperarías según la teoría del dominio medio (mid-domain effect)?
+R: La diferencias entre los sitios 7 y 4 esta explicado por un proceso reemplazo de especies, ya que se puede observar en la composición de cada uno, estos no comparten especies, sino que el sitio 7 tiene presencia de fichas moradas solamente y el sitio 4 tiene presencia de otras fichas, menos de la morada. Sin embargo en el otro conjunto de sitios (6 y 7), si se observa un efecto de anidamiento en donde el sitio 7 es un subconjunto del sitio 6, ya que todas las especies del sitio 7 se encuentran en el sitio 6, pero en el sitio 7 no se encuentran muchas especies (fichas) que estan presentes en el sitio 6. El proceso de anidamiento es el que más se explica los resultados obtenidos, a excepción del sitio 7, ya que en la mayoría de sitios se puede ver que comparten varias especies, pudiendo formar subconjuntos entre ellas.
+
+```{r}
+sp_matrix
+```
+
+m) P13. Si estos sitios representaran puntos a lo largo de un gradiente altitudinal, ¿qué patrón de beta-diversidad esperarías según la teoría del dominio medio (mid-domain effect)?
 ¿Coincide con tus resultados?
+R: De acuerdo con la teoría del dominio medio, se esparía que la diversidad beta aumente conforme aumenta la distancia entre sitios a lo largo de un gradiante altitudinal, de modo que los sitios más cercanos o a una altura media presenten comunidades muy similares y los sitios más lejanos o a los extremos presenten comunidades más diferentes. Sin embargo, los resultados obtenidos no muestran un patrón gradual en la disimilitud entre sitios. En particular el sitio 7 presenta mayor diferencia en su composición respecto a los demás y no se integra a un gradiante progresivo de cambio. Esto nos deja ver que los datos no siguen este patrón continuo esperado por la teoría mid-domain effect.
 
 E. Síntesis e interpretación ecológica
 n) P14. Construye una narrativa ecológica coherente: tomando todos los índices calculados,

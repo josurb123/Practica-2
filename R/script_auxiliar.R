@@ -1,5 +1,5 @@
 install.packages("vegan")
-library(iNEXT)
+library(tidyverse)
 
 ##cargar cada uno de los sitios en un objeto
 ####modificando algunos aspectos de los objetos para poder hacer los pasos posteriores sin problemas
