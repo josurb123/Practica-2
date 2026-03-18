@@ -1,0 +1,3 @@
+equipo: Josue Reza Bada, Alonso Rendon Luna, Leydi Aide Robles Cacho
+Materia: Genomica Funcional
+Descripción: En esta práctica se simuló el muestreo de comunidades biológicas mediante la extracción aleatoria de fichas de distintos colores a partir de varias bolsas, donde cada color representó una especie y cada bolsa un sitio. A partir de estos datos se construyó una matriz de abundancia de especies por sitio, la cual permitió calcular métricas de diversidad alfa (como riqueza, Shannon y Simpson) y diversidad beta (mediante índices de disimilitud como Bray-Curtis). Asimismo, se analizaron los patrones de recambio de especies (reemplazo) y anidamiento entre sitios, así como la posible relación de estos patrones con teorías ecológicas como el efecto del dominio medio.
