@@ -93,11 +93,30 @@ n) P14. Construye una narrativa ecológica coherente: tomando todos los índices
 describe qué tipo de comunidad representa cada sitio (p. ej. perturbada, madura,
 oligoespéciosa) y propón una hipótesis sobre el proceso ecológico que generó esas
 diferencias.
+R: En realidad los sitios presentan condiciones muy diferentes, por ejemplo:
+
+sitio 1,2 y 5: En la grafica de rango-abundancia tiene pendientes similares y las relaciono con una distribución equilibrada, sin embargo, no es madura, al compararla con otros sitios como el 3 en realidad puede acercarse a esta distribución, lo que me hace pensar que quizas este en una etapa media de desarrollo, en el cual tiene una diversidad y riqueza representativas. 
+
+sitio 3: Tiene valores mas altos siendo Shannon = 2.44, Simpson = 0.91 y Pielou = 0.98 lo cual representa una comunidad equilibrada entre varias especies (madura) y con una perturbación muy baja que no genera un cambio en la población. La curva de rango-abundancia se ve "lineal" lo que tambien sugiere que tiene baja dominancia. 
+
+sitio 4 y 6: Al igual que el primer apartado, tampoco parece un estadio maduro pero si tiene unas pendientes diferentes en comparación con otros sitios y de igula manera, aunque se presenta una riqueza moderada, tampoco es un sitio en equilibrio total ya que aqui si se presenta dominancia (no es alta) entonces, podria haber una perturbación en la que claramente habrá especies dominantes pero que no reemplazan a las demas. 
+
+sitio 7: Este es con mucha diferencia el mas extraño de todos, ¿por qué? porque no hay diversidad, en la gráfica de rango abundancia hay un solo punto (una sola especie).
+En diversidad Beta es completamente diferente, lo que indica una alta perturbación.
+
 o) P15. Si tuvieras que escoger un solo índice para monitorear la salud de estas comunidades
 a lo largo del tiempo, ¿cuál elegirías y por qué? ¿Cuáles serían sus limitaciones?
+El indice de Shannon, en realidad lo vimos en clase y tiene mucho sentido, Shannon puede darnos una vision de riqueza y equitatividad lo que podria permitir darse cuenta de estadios especificos y generar una predicción de como se comportara la población. 
+Desventajas: Pues quizas que depende muchisimo del muestreo, debe ser representativo, sino podriamos suponer escenarios que no tienen mucho sentido o que se deben a otros factores.
+
+
 p) P16. Propón un diseño de muestreo para un estudio real que permita calcular diversidad
 alfa y beta de manera robusta. Especifica: número de sitios, réplicas, tamaño mínimo de
 muestra y justificación estadística.
 
+Número de sitios: 15-20
+Replicas: 4- 5 por sitio 
+Tamaño minimo de muestra: Depende, al comparar los sitios, nos podriamos quedar con el mas pequeño como la minima o no generar un rango y hacerlo aleatorio.
+Justificacion: Obtener la variación y comparabilidad de varios sitios, entendiendo como es que cambian a traves del tiempo, que perturbaciones se pueden presentar en una comunidad y que pasa una vez que hay dominancia, al tener una perdida de la diversidad basicamente pierdes toda la recombinación, como es que una población domina y por qué lo hace, que significa que los sitios cambien y por que cambian, considerando que seria tomada al azar, con cuadrantes delimitados y a traves del tiempo, podemos responder muchas preguntas. 
 
 
